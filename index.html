@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ainda Há Esperança - Check-in</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Great+Vibes&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#checkin">Check-in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <img src="img/banner.jpg" alt="Banner do Evento" class="evento-img" />
+  </section>
+
+  <section id="sobre"  >
+    <h2>Sobre o Evento</h2>
+    <p>Assista ao vídeo explicativo sobre o culto especial de mulheres:</p>
+    <div class="video-container">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/SEU_VIDEO" frameborder="0"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="checkin" >
+    <h2> Faça Seu Check-in</h2>
+    <form id="checkin-form">
+      <input type="text" id="nome" placeholder="Digite seu nome" required />
+      <input type="text" id="whatsapp" placeholder="Digite seu WhatsApp" required />
+      <input type="text" id="igreja" placeholder="Digite o nome da sua igreja" required />
+      <input type="file" id="foto" accept="image/*" required />
+      <button type="submit">Fazer Check-in</button>
+    </form>
+
+    <div id="ingresso" class="card" style="display: none;">
+      <div class="card-header">
+        <div>
+          <h3>🌸 Culto Especial de Mulheres</h3>
+          <p>Ainda Há Esperança</p>
+        </div>
+        <img id="foto-preview" alt="Foto do Participante" />
+      </div>
+      <div class="card-body">
+        <h3 id="nome-card"></h3>
+        <p id="igreja-card"></p>
+        <p>30 de Agosto • Sábado • 14h</p>
+        <p class="confirmado">✅ PRESENÇA CONFIRMADA</p>
+        <p class="versiculo">Jó 14:7-9</p>
+        <p class="versiculo">Endereço: Rua Cipotânia,122-Torre</p>
+      </div>
+    </div>
+
+    <button id="download-btn" style="display: none;">📥 Baixar Ingresso</button>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
